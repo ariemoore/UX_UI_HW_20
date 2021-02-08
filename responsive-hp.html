@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Homepage</title>
+    <link rel="stylesheet" href="responsive-hp.css">
+</head>
+<body>
+   <section class="banner" id="sec">
+       <header>
+           <a href="#" class="logo">Logo</a>
+           <div id="toggle" onclick="toggle()"></div>
+       </header>
+       <div class="content">
+           <h2>Hello World,<br>I'm <span> Arielle Moore</span></h2>
+           <p>A UX/UI Designer in Salt Lake City, UT</p>
+           <a href="#">Know More</a>
+       </div>
+       <ul class="sci">
+        <li><a href="#"><img src="images/facebook.png"></a></li>
+        <li><a href="#"><img src="images/twitter.png"></a></li>
+        <li><a href="#"><img src="images/facebook.png"></a></li>
+       </ul>
+   </section> 
+   <div id="navigation">
+       <ul>
+         <li><a href="#">Home</a></li>
+         <li><a href="#">About</a></li>
+         <li><a href="#">Services</a></li>
+         <li><a href="#">Portfolio</a></li>
+         <li><a href="#">Contact</a></li>
+
+       </ul>
+   </div>
+   <script type="text/javascript">
+    function toggle(){
+        var sec = document.getElementById('sec');
+        var nav = document.getElementById('navigation');
+        sec.classList.toggle('active');
+        nav.classList.toggle('active');
+    }
+
+   </script>
+</body>
+</html>
